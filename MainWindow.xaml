@@ -33,12 +33,7 @@
                 x:Name="buttonStart" Click="ButtonStart_Click" 
                 Background="Gainsboro" Grid.ColumnSpan="3" FontWeight="Bold" FontSize="36" />
             <Label x:Name="clashLabel" Content="" Grid.Column="2" HorizontalAlignment="Left" Margin="218,88,-614.333,-73" VerticalAlignment="Top" Height="53" Width="469" FontSize="36" FontWeight="Bold" Foreground="#FFFF0404"/>
-            <ListBox Name="lbxItems" HorizontalAlignment="Left" Height="84" Margin="85,61,-59,-67" VerticalAlignment="Top" Width="49" Grid.Column="2">
-                <ListBoxItem>24</ListBoxItem>
-                <ListBoxItem>25</ListBoxItem>
-                <ListBoxItem>26</ListBoxItem>
-                <ListBoxItem>30</ListBoxItem>
-            </ListBox>
+
         </Grid>
         <Button x:Name="yesno" Content="" Margin="59,10,0,0" Background="Red" FontSize="22" FontWeight="Bold" IsHitTestVisible="False" Height="10" VerticalAlignment="Top" HorizontalAlignment="Left" Width="0" Grid.Column="2"/>
         <Label x:Name="epcLabel" Content="EPC :" HorizontalAlignment="Left" Margin="6,968,0,-508" Width="452" Grid.Row="1" Grid.ColumnSpan="2" Grid.Column="1"/>
@@ -49,11 +44,12 @@
         <Image HorizontalAlignment="Left" Height="315" Margin="193.667,474,0,-225" VerticalAlignment="Top" Width="630" Source="images/logo_EDA.png" Grid.Column="2" Grid.Row="1"/>
         <Label x:Name="rssiLabel" Content="" Grid.Column="2" HorizontalAlignment="Left" Margin="738.667,5,0,0" VerticalAlignment="Top" Height="50" Width="110" FontSize="36" FontWeight="Bold"/>
         <Label x:Name="epcBottom" Content="EPC" HorizontalAlignment="Left" Height="82" Margin="129,28,0,0" VerticalAlignment="Top" FontSize="36" Width="695" Grid.Column="2" Grid.RowSpan="2"/>
-        <Slider x:Name="epcPower" Grid.Column="2" HorizontalAlignment="Left" Height="35" Margin="634.667,740,0,-211" Grid.Row="1" VerticalAlignment="Top" Width="240" Maximum="30" Minimum="27" TickPlacement="TopLeft" Value="10" PreviewGiveFeedback="epcPower_PreviewGiveFeedback" ValueChanged="epcPower_ValueChanged"/>
+
         <Label x:Name="epcPowerLabel" Content="" Grid.Column="2" HorizontalAlignment="Left" Height="100" Margin="568.667,654,0,-190" Grid.Row="1" VerticalAlignment="Top" Width="155"/>
         <Label Content="Green = Strong Signal&#xD;&#xA;&#xD;&#xA;" Grid.Column="2" HorizontalAlignment="Left" Margin="198.667,369,0,0" Grid.Row="1" VerticalAlignment="Top" Height="90" Width="550" FontSize="48" FontWeight="Bold" Foreground="#FF3FF30E"/>
         <Label Content="Yellow= Good Signal&#xA;&#xA;" Grid.Column="2" HorizontalAlignment="Left" Margin="198.667,239,0,0" Grid.Row="1" VerticalAlignment="Top" Height="90" Width="550" FontSize="48" FontWeight="Bold" Foreground="#FFDACD09"/>
         <Label Content="Red = No Signal&#xA;&#xA;" Grid.Column="2" HorizontalAlignment="Left" Margin="198.667,105,0,0" Grid.Row="1" VerticalAlignment="Top" Height="90" Width="550" FontSize="48" FontWeight="Bold" Foreground="#FFFF0202"/>
+        <Button x:Name="settingsButton" Content="Settings" Grid.Column="2" HorizontalAlignment="Left" Margin="739,26,0,0" VerticalAlignment="Top" Width="75" Click="SettingsButton_Click"/>
 
     </Grid>
 </Window>

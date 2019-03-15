@@ -5,16 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp2"
         mc:Ignorable="d"
-        Title="settings" Height="450" Width="800">
-    <Grid>
-        <Slider HorizontalAlignment="Left" Margin="149,106,0,0" VerticalAlignment="Top" Width="438" Minimum="15" Maximum="30" SmallChange="1"/>
-        <Label Content="Power in dBm" HorizontalAlignment="Left" Margin="39,100,0,0" VerticalAlignment="Top"/>
-        <Label Content="IP Address" HorizontalAlignment="Left" Margin="39,56,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="147,60,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="438"/>
-        <Label Content="Green Value" HorizontalAlignment="Left" Margin="41,142,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="149,146,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="438"/>
-        <Label Content="Yellow Value" HorizontalAlignment="Left" Margin="41,183,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="149,187,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="438"/>
+        Title="settings" Height="358.5" Width="647">
+    <Grid Margin="0,0,21,15">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="22*"/>
+            <ColumnDefinition Width="157*"/>
+            <ColumnDefinition Width="613*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Power in dBm" HorizontalAlignment="Left" Margin="17.401,100,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label Content="IP Address" HorizontalAlignment="Left" Margin="17.401,56,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBox x:Name="ipAddressTextBox" HorizontalAlignment="Left" Height="23" Margin="0,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="438" Grid.Column="2"/>
+        <Label Content="Green Value" HorizontalAlignment="Left" Margin="19.401,142,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBox x:Name="greenValueTextBox" HorizontalAlignment="Left" Height="23" Margin="0,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="438" Grid.Column="2"/>
+        <Label Content="Yellow Value" HorizontalAlignment="Left" Margin="19.401,183,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBox x:Name="yellowValueTextBox" HorizontalAlignment="Left" Height="23" Margin="0,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="438" Grid.Column="2"/>
+        <Label Content="EPC Filter" HorizontalAlignment="Left" Margin="19.401,226,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBox x:Name="epcFilterTextBox" HorizontalAlignment="Left" Height="23" Margin="0,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="438" Grid.Column="2"/>
+
+        <Button x:Name="settingsApplyButton" Content="Apply" Grid.Column="2" HorizontalAlignment="Left" Margin="364,282,0,0" VerticalAlignment="Top" Width="76" Click="SettingsApplyButton_Click"/>
+        <Button x:Name="defaultsApply" Content="Defaults" Grid.Column="2" HorizontalAlignment="Left" Margin="282,282,0,0" VerticalAlignment="Top" Width="75" Click="DefaultsApply_Click"/>
+        <TextBlock x:Name="powerTextBlock" Grid.Column="2" HorizontalAlignment="Left" Margin="419,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="powerBox" HorizontalAlignment="Left" Height="23" Margin="0,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="438" Grid.Column="2"/>
 
     </Grid>
 </Window>
